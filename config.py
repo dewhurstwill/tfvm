@@ -2,6 +2,9 @@
 import platform
 from os.path import expanduser
 
+# tfvm version
+version = '0.0.4'
+
 # Support for Windows/*nix file systems
 path_style = '/'
 if platform.system() == 'Windows':

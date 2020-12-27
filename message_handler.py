@@ -1,3 +1,5 @@
+from config import version
+
 def display_message(message: list):
   for l in message:
     print(str(l))
