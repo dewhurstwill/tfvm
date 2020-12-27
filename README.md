@@ -10,6 +10,8 @@ Terraform Version Manager
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_tfvm&metric=sqale_index)](https://sonarcloud.io/dashboard?id=dewhurstwill_tfvm)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_tfvm&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=dewhurstwill_tfvm)
 
+![GitHub repo size](https://img.shields.io/github/repo-size/dewhurstwill/tfvm?style=flat-square)
+
 ## Install 📦 & Run 💻
 
 | Steps 📝 | Commands 💻 |
@@ -31,15 +33,23 @@ Terraform Version Manager
 
 Handled by [setup.sh](https://github.com/dewhurstwill/tfvm/blob/main/setup.sh)
 
-* [blessed](https://pypi.org/project/blessed/)
+* [blessed](https://pypi.org/project/blessed/) 
+  * ![PyPI - Downloads](https://img.shields.io/pypi/dm/blessed?style=flat-square)
+  * ![PyPI - License](https://img.shields.io/pypi/l/blessed?style=flat-square)
   * inquirer dependency
   * Blessed is an easy, practical library for making terminal apps, by providing an elegant, well-documented interface to Colors, Keyboard input, and screen position and Location capabilities.
-* [readchar](https://pypi.org/project/readchar/)
+* [readchar](https://pypi.org/project/readchar/) 
+  * ![PyPI - Downloads](https://img.shields.io/pypi/dm/readchar?style=flat-square)
+  * ![PyPI - License](https://img.shields.io/pypi/l/readchar?style=flat-square)
   * inquirer dependency
   * Born as a python-inquirer requirement.
   * The idea is to have a portable way to read single characters and key-strokes.
-* [python-editor](https://pypi.org/project/python-editor/)
+* [python-editor](https://pypi.org/project/python-editor/) 
+  * ![PyPI - Downloads](https://img.shields.io/pypi/dm/python-editor?style=flat-square)
+  * ![PyPI - License](https://img.shields.io/pypi/l/python-editor?style=flat-square)
   * inquirer dependency
   * python-editor is a library that provides the editor module for programmatically interfacing with your system’s $EDITOR.
 * [inquirer](https://pypi.org/project/inquirer/)
+  * ![PyPI - Downloads](https://img.shields.io/pypi/dm/inquirer?style=flat-square)
+  * ![PyPI - License](https://img.shields.io/pypi/l/inquirer?style=flat-square)
   * Collection of common interactive command line user interfaces, based on Inquirer.js.
