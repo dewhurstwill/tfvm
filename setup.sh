@@ -5,7 +5,7 @@
 #################################
 
 # Constants
-version='0.0.5'
+version='0.0.6'
 new_dir='/usr/local/bin/tfvm'
 repo_url='https://codeload.github.com/dewhurstwill/tfvm/zip'
 
