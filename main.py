@@ -16,6 +16,6 @@ if not cli_args():
   # Get the users choice
   answers = inquirer.prompt(questions)
   display_message(['Switchng to ' + str(answers['version'])])
-  # Swtich to the requested version
+  # Switch to the requested version
   switch_version(answers['version'])
   display_message(['Switch Successful: ' + str(answers['version'])])
