@@ -5,7 +5,7 @@ from os.path import exists, expanduser
 
 # Helper Modules
 from sys_handler import get_architecture
-from file_handler import check_if_version_exists, download_terraform, make_executable
+from file_handler import check_if_version_exists, download_terraform, make_executable, initialise
 from env_handler import is_tf_in_path, handle_path
 
 # Config
