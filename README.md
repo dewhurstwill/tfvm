@@ -1,6 +1,6 @@
 # tfvm [ Terraform Version Manager ] 🔧
 
-Terraform Version Manager (Build for OSX/Linux, Should work for windows but not tested)
+Terraform Version Manager
 
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_tfvm&metric=ncloc)](https://sonarcloud.io/dashboard?id=dewhurstwill_tfvm)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_tfvm&metric=bugs)](https://sonarcloud.io/dashboard?id=dewhurstwill_tfvm)
@@ -65,3 +65,11 @@ Handled by [setup.sh](https://github.com/dewhurstwill/tfvm/blob/main/setup.sh)
 | ```tfvm version``` | ![tfvm version](https://imgur.com/fqee855.png "tfvm version") |
 | ```tfvm select <version>``` | ![tfvm select](https://imgur.com/QZo7OdW.png "tfvm select") |
 | ```tfvm latest``` | ![tfvm latest](https://imgur.com/rKvTjhI.png "tfvm latest") |
+
+## Platforms
+
+| Platform | Tested On | Working On |
+|-|-|-|
+| Mac OSX 11.0.1 | ✅ | ✅ |
+| Ubuntu 20.10 | ✅ | ✅ |
+| Windows 10 | ❌ | ❌ |
