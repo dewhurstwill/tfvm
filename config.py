@@ -3,7 +3,7 @@ import platform
 from os.path import expanduser
 
 # tfvm version
-version = '0.0.8'
+version = '0.0.9'
 
 # Support for Windows/*nix file systems
 path_style = '/'
