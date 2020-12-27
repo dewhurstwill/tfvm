@@ -2,6 +2,14 @@
 
 Terraform Version Manager
 
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_tfvm&metric=ncloc)](https://sonarcloud.io/dashboard?id=dewhurstwill_tfvm)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_tfvm&metric=bugs)](https://sonarcloud.io/dashboard?id=dewhurstwill_tfvm)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_tfvm&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=dewhurstwill_tfvm)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_tfvm&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=dewhurstwill_tfvm)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_tfvm&metric=security_rating)](https://sonarcloud.io/dashboard?id=dewhurstwill_tfvm)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_tfvm&metric=sqale_index)](https://sonarcloud.io/dashboard?id=dewhurstwill_tfvm)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_tfvm&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=dewhurstwill_tfvm)
+
 ## Install 📦 & Run 💻
 
 | Steps 📝 | Commands 💻 |
