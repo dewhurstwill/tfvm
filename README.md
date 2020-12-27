@@ -17,7 +17,7 @@ Terraform Version Manager
 ```
 
 
-Required python packages:
+## Required python packages:
 
 * [blessed](https://pypi.org/project/blessed/)
   * inquirer dependency
