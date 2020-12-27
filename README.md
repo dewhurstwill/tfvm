@@ -61,6 +61,7 @@ Handled by [setup.sh](https://github.com/dewhurstwill/tfvm/blob/main/setup.sh)
 | Command | Screenshot |
 |-|-|
 | ```tfvm ``` | ![tfvm screenshot](https://imgur.com/BZUVEGW.png "tfvm") |
-| ```tfvm help``` | ![tfvm help screenshot](https://imgur.com/169dP7h.png "tfvm help") |
+| ```tfvm help``` | ![tfvm help screenshot](https://imgur.com/4brR0oe.png "tfvm help") |
 | ```tfvm version``` | ![tfvm version](https://imgur.com/fqee855.png "tfvm version") |
 | ```tfvm select <version>``` | ![tfvm select](https://imgur.com/QZo7OdW.png "tfvm select") |
+| ```tfvm latest``` | ![tfvm latest](https://imgur.com/rKvTjhI.png "tfvm latest") |
