@@ -6,8 +6,10 @@ Terraform Version Manager
 
 | Steps 📝 | Commands 💻 |
 |-|-|
-| Step 1 | ``` /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dewhurstwill/tfvm/main/setup.sh)" ``` |
-| Step 2 | ``` tfvm help ``` |
+| Step 1 | Install [Python 3.x](https://www.python.org/downloads/) <=|
+| Step 2 | Install [Pip 3.x](https://pip.pypa.io/en/stable/installing/) <= |
+| Step 3 | ``` /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dewhurstwill/tfvm/main/setup.sh)" ``` |
+| Step 4 | ``` tfvm help ``` |
 
 
 ## Uninstall 📦
