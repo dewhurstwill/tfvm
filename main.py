@@ -2,13 +2,13 @@
 import inquirer
 
 #Helper Modules
-import cli_handler
+from cli_handler import cli_args
 from terraform_handler import get_versions, switch_version
 from message_handler import display_message
 
 
 # If not CLI flags have been passed
-if not cli_handler():
+if not cli_args():
   # Get a list of all available terraform versions
   available_versions = get_versions('all')
   # Display a CLI UI to the user to pick a version

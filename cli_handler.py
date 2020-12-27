@@ -9,7 +9,7 @@ from file_handler import purge, initialise
 
 
 # Handles flags passed to the script
-def cli_handler():
+def cli_args():
   # Help flags
   if ('-h' in argv) or ('--h' in argv) or ('-help' in argv) or ('--help' in argv) or ('help' in argv):
     # Display help message
