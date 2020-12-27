@@ -66,7 +66,7 @@ def set_active_version(version: str):
 
   if platform.system() == 'Windows':
     selected_version_file += '.exe'
-    destination_file += exe
+    destination_file += '.exe'
   
   copyfile(selected_version_file, destination_file)
   
