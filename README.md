@@ -65,4 +65,12 @@ More can be found in [requirements.txt](https://github.com/dewhurstwill/tfvm/blo
 |-|-|-|
 | Mac OSX 11.0.1 | ✅ | ✅ |
 | Ubuntu 20.10 | ✅ | ✅ |
-| Windows 10 | ❌ | ❌ |
+| Windows 10 | ✅ | ❌ |
+
+* This is not 100% stable on windows but will still run, in powersehell run setup.ps1 to get started
+* You will only be able to access the script by running the script directly
+  * python C:\Users\YOUR USER\.tfvm\app\main.py help
+  * python C:\Users\YOUR USER\.tfvm\app\main.py select <some_version>
+  * python C:\Users\YOUR USER\.tfvm\app\main.py select latest
+  * python C:\Users\YOUR USER\.tfvm\app\main.py latest show
+* Tring to run the script without arguments also doesnt work due to an incompatability with inquirer
