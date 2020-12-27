@@ -15,12 +15,10 @@ from config import terraform_install_location, terraform_temp_location, nix_bin_
 
 # Initialise helper, used to create various terraform directories if they don't exist
 def initialise(target: str):
-  if target == 'install':
-    if not exists(terraform_install_location):
-      mkdir(terraform_install_location)
-  elif target == 'temp':
-    if not exists(terraform_temp_location):
-      mkdir(terraform_temp_location)
+  if target == 'install' and not exists(terraform_install_location):
+    mkdir(terraform_install_location)
+  elif target == 'temp' and not exists(terraform_temp_location):
+    mkdir(terraform_temp_location)
 
 
 # Purge helper, used to remove dangling terraform binaries

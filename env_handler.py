@@ -28,5 +28,5 @@ def handle_path():
     path_delimiter = ';'
 
   # Split and return the string
-  path_list = path.split('path_delimiter')
+  path_list = path.split(path_delimiter)
   return path_list
