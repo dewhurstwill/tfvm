@@ -1,6 +1,6 @@
 # tfvm [ Terraform Version Manager ] 🔧
 
-Terraform Version Manager
+Terraform Version Manager (Build for OSX/Linux, Should work for windows but not tested)
 
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_tfvm&metric=ncloc)](https://sonarcloud.io/dashboard?id=dewhurstwill_tfvm)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_tfvm&metric=bugs)](https://sonarcloud.io/dashboard?id=dewhurstwill_tfvm)
