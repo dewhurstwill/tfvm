@@ -19,6 +19,8 @@ Terraform Version Manager
 
 ## Required python packages:
 
+Handled by [setup.sh](https://github.com/dewhurstwill/tfvm/blob/main/setup.sh)
+
 * [blessed](https://pypi.org/project/blessed/)
   * inquirer dependency
   * Blessed is an easy, practical library for making terminal apps, by providing an elegant, well-documented interface to Colors, Keyboard input, and screen position and Location capabilities.
