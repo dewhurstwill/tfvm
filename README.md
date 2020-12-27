@@ -11,6 +11,7 @@ Terraform Version Manager
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_tfvm&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=dewhurstwill_tfvm)
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/dewhurstwill/tfvm?style=flat-square)
+![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/dewhurstwill/tfvm?include_prereleases&sort=semver&style=flat-square)
 
 ## Install 📦 & Run 💻
 
