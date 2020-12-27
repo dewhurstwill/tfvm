@@ -11,10 +11,14 @@ def help_message():
     'The available commands for execution are listed below.',
     '',
     'Commands:',
-    '  version            - Display the current version of terraform version manager',
-    '  select [<Version>] - Specify a valid semantic version to switch to',
-    '  reset              - Resets terraform version manager',
-    '  purge              - Alias for reset'
+    '  version             - Display the current version of terraform version manager',
+    '  select',
+    '        - [<Version>] - Specify a valid semantic version to switch to',
+    '        - latest      - Switch to the latest version of terraform',
+    '  latest',
+    '       - show         - Show the latest of version of terraform',
+    '  reset               - Resets terraform version manager',
+    '  purge               - Alias for reset'
   ])
 
 def version_message():

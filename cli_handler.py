@@ -1,5 +1,6 @@
 # Packages
 from sys import argv
+import inquirer
 
 # Helper Modules
 from message_handler import help_message, version_message, display_message
@@ -34,6 +35,31 @@ def cli_args():
       display_message(['Purged'])
     # Return true so the user is not prompted to select a version
     return True
+  # Latest flags
+  elif ('latest' in argv) and (argv[1] == 'latest'):
+    available_versions = get_versions('all')
+    version = available_versions[0]
+    display_message(['The latest available version of terraform is ' + str(version),''])
+    if ('show' in argv) and (argv[2] == 'show'):
+      return True
+    # Display a CLI UI to the user to pick yes or no
+    questions = [inquirer.List('latest', message='Would you like to switch to '+ version + '?', choices=['Yes','No'])]
+    # Get the users choice
+    answers = inquirer.prompt(questions)
+    if answers['latest'] == 'Yes':
+      display_message(['Switchng to ' + str(version)])
+      switch_version(version)
+      display_message(['Switch Successful: ' + str(version)])
+      return True
+    else:
+      questions = [inquirer.List('version', message='Would you like to switch to another version?', choices=['Yes','No'])]
+      # Get the users choice
+      answers = inquirer.prompt(questions)
+      if answers['version'] == 'Yes':
+        return False
+      else:
+        display_message(['Exiting'])
+        return True
   # Select flags
   elif ('select' in argv) and (argv[1] == 'select'):
     if len(argv) > 2:
@@ -43,9 +69,11 @@ def cli_args():
       version = argv[2]
       # Check to ensure the version is not null
       if version != '':
-        display_message(['Switchng to ' + str(version)])
         # Get a list of available terraform versions
+        display_message(['Switchng to ' + str(version)])
         available_versions = get_versions('all')
+        if version.lower() == 'latest':
+          version = available_versions[0]
         # Check to see if the user inputted version is in the list of available versions
         if version in available_versions:
           # If true, call the switch version helper
