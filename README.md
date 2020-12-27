@@ -54,3 +54,17 @@ Handled by [setup.sh](https://github.com/dewhurstwill/tfvm/blob/main/setup.sh)
   * ![PyPI - Downloads](https://img.shields.io/pypi/dm/inquirer?style=flat-square)
   * ![PyPI - License](https://img.shields.io/pypi/l/inquirer?style=flat-square)
   * Collection of common interactive command line user interfaces, based on Inquirer.js.
+  
+  
+## Screenshots
+  
+  ![tfvm screenshot](https://imgur.com/BZUVEGW.png "tfvm")
+  
+  ![tfvm help screenshot](https://imgur.com/169dP7h.png "tfvm help")
+  
+  ![tfvm version](https://imgur.com/fqee855.png "tfvm version")
+  
+  ![tfvm select](https://imgur.com/QZo7OdW.png "tfvm select")
+  
+  
+
