@@ -8,3 +8,10 @@ Terraform Version Manager
 |-|-|
 | Step 1 | ``` /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dewhurstwill/tfvm/main/setup.sh)" ``` |
 | Step 2 | ``` tfvm help ``` |
+
+
+## Uninstall 📦
+
+```bash 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dewhurstwill/tfvm/main/uninstall.sh)" 
+```
