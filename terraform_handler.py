@@ -1,6 +1,7 @@
 # Packages
 import requests, platform
 from shutil import copyfile
+from os import remove as deletefile
 from os.path import exists, expanduser
 
 # Helper Modules
@@ -68,6 +69,9 @@ def set_active_version(version: str):
     selected_version_file += '.exe'
     destination_file += '.exe'
   
+  if exists(destination_file):
+    deletefile(destination_file)
+    
   copyfile(selected_version_file, destination_file)
   
   if platform.system() != 'Windows':
