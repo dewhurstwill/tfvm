@@ -19,7 +19,7 @@ Terraform Version Manager
 |-|-|
 | Step 1 | Install [Python 3.x](https://www.python.org/downloads/) <=|
 | Step 2 | Install [Pip 3.x](https://pip.pypa.io/en/stable/installing/) <= |
-| Step 3 | ``` /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dewhurstwill/tfvm/main/setup.sh)" ``` |
+| Step 3 | ``` curl -fsSL https://raw.githubusercontent.com/dewhurstwill/tfvm/main/setup.sh | bash ``` |
 | Step 4 | ``` tfvm help ``` |
 
 
