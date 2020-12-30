@@ -37,7 +37,7 @@ cd $new_dir 2>&1 >> ~/.tfvm/logs/install.log
 
 # Downloading
 echo Downloading
-sudo curl --output $zip_path "${repo_url}/v${version}" 2>&1 >> ~/.tfvm/logs/install.log
+sudo curl --output $zip_path --slient "${repo_url}/v${version}"
 
 
 # Unpacking
