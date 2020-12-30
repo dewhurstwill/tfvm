@@ -31,8 +31,8 @@ touch ~/.tfvm/logs/install.log
 
 # Creating Install Location
 echo Creating install location
-sudo mkdir $new_dir 2>&1 >> ~/.tfvm/logs/install.log
-cd $new_dir 2>&1 >> ~/.tfvm/logs/install.log
+sudo mkdir $new_dir
+cd $new_dir
 
 
 # Downloading
@@ -54,8 +54,8 @@ sudo ln -s ~/.terraform.versions/terraform /usr/local/bin/terraform 2>&1 >> ~/.t
 
 # Cleaning Up
 echo Cleaning Up
-sudo rm $zip_path 2>&1 >> ~/.tfvm/logs/install.log
-sudo rm -r $pkg_dir 2>&1 >> ~/.tfvm/logs/install.log
+sudo rm $zip_path
+sudo rm -r $pkg_dir
 
 
 # Adding Alias 
