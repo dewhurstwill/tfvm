@@ -48,7 +48,7 @@ sudo unzip -q $zip_path
 # Installing
 echo Installing 
 sudo cp -r ${pkg_dir}/* . 2>&1 >> ~/.tfvm/logs/install.log
-pip3 install -r requirements.txt 2>&1 >> ~/.tfvm/logs/install.log
+pip3 install -q -r requirements.txt
 sudo ln -s ~/.terraform.versions/terraform /usr/local/bin/terraform 2>&1 >> ~/.tfvm/logs/install.log
 
 
