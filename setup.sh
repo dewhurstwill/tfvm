@@ -42,7 +42,7 @@ sudo curl --output $zip_path --slient "${repo_url}/v${version}"
 
 # Unpacking
 echo Unpacking
-sudo unzip $zip_path 2>&1 >> ~/.tfvm/logs/install.log
+sudo unzip -q $zip_path
 
 
 # Installing
