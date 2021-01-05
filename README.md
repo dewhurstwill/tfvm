@@ -13,27 +13,24 @@ Terraform Version Manager
 ![GitHub repo size](https://img.shields.io/github/repo-size/dewhurstwill/tfvm?style=flat-square)
 ![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/dewhurstwill/tfvm?include_prereleases&sort=semver&style=flat-square)
 
+
 ## Install 📦 & Run 💻
 
 | Steps 📝 | Commands 💻 |
 |-|-|
-| Step 1 | Install [Python 3.x](https://www.python.org/downloads/) <=|
-| Step 2 | Install [Pip 3.x](https://pip.pypa.io/en/stable/installing/) <= |
-| Step 3 | ``` curl -fsSL https://raw.githubusercontent.com/dewhurstwill/tfvm/main/setup.sh | bash ``` |
-| Step 4 | ``` tfvm help ``` |
+| Step 1 | ``` curl -fsSL https://raw.githubusercontent.com/dewhurstwill/tfvm/main/setup.sh | bash ``` |
+| Step 2 | ``` tfvm help ``` |
 
 
 ## Uninstall 📦
 
 ```bash 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dewhurstwill/tfvm/main/uninstall.sh)" 
+curl -fsSL https://raw.githubusercontent.com/dewhurstwill/tfvm/main/uninstall.sh | bash
 ```
-
 
 ## Required python packages:
 
-Handled by [setup.sh](https://github.com/dewhurstwill/tfvm/blob/main/setup.sh)
-
+Handled by [build.sh](https://github.com/dewhurstwill/tfvm/blob/main/build.sh)
 
 
 * [requests](https://pypi.org/project/requests/) 
@@ -47,6 +44,16 @@ Handled by [setup.sh](https://github.com/dewhurstwill/tfvm/blob/main/setup.sh)
   
 
 More can be found in [requirements.txt](https://github.com/dewhurstwill/tfvm/blob/main/requirements.txt)
+
+
+## Want to build your own binary:
+
+| Step | Action |
+|-|-|
+| Step 1 | Clone the repo |
+| Step 2 | Navigate to the repo |
+| Step 3 | Run build.sh |
+| Step 4 | Consume the binary from the dist folder |
   
   
 ## Screenshots
@@ -67,10 +74,4 @@ More can be found in [requirements.txt](https://github.com/dewhurstwill/tfvm/blo
 | Ubuntu 20.10 | ✅ | ✅ |
 | Windows 10 | ✅ | ❌ |
 
-* This is not 100% stable on windows but will still run, in powersehell run setup.ps1 to get started
-* You will only be able to access the script by running the script directly
-  * python C:\Users\your_username\\.tfvm\app\main.py help
-  * python C:\Users\your_username\\.tfvm\app\main.py select <some_version>
-  * python C:\Users\your_username\\.tfvm\app\main.py select latest
-  * python C:\Users\your_username\\.tfvm\app\main.py latest show
-* Tring to run the script without arguments also doesnt work due to an incompatability with inquirer
+* This should now work on windows however it has not been tested
