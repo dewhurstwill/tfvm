@@ -1,2 +1,2 @@
-pip3 install -r requirements.txt
+pip3 install -r src/requirements.txt
 pyinstaller --onefile src/tfvm.py
