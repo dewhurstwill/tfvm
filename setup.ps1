@@ -10,16 +10,9 @@ $url = 'https://codeload.github.com/dewhurstwill/tfvm/zip/v' + $version
 $output_zip = "C:\$env:HOMEPATH\" + $zip_name
 $output_dir = "C:\$env:HOMEPATH\.tfvm"
 
-python -V
-pip -V
-
 if (!(Test-Path -Path C:\$env:HOMEPATH\.tfvm))
 {
     New-Item "C:\$env:HOMEPATH\.tfvm" -itemtype directory
-    if (!(Test-Path -Path C:\$env:HOMEPATH\.tfvm\logs))
-    {
-        New-Item "C:\$env:HOMEPATH\.tfvm\logs" -itemtype directory
-    }
 }
 
 $oldpath = (Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH).path
@@ -45,17 +38,7 @@ if (Test-Path -Path $output)
     
     if (Test-Path $expandedDir)
     {
-        if (Test-Path -Path "$output_dir\app")
-        {
-            Remove-Item -Path "$output_dir\app" -Recurse
-        }
-        Rename-Item $expandedDir "$output_dir\app"
-        if (Test-Path -Path "$output_dir\app")
-        {
-            pip install -r "C:\$ENV:HOMEPATH\.tfvm\app\requirements.txt"
-
-            $aliasValue = 'python.exe "C:' + $ENV:HOMEPATH + '\.tfvm\app\main.py"'
-            Set-Alias -Name "tfvm" -Value "$aliasValue"
-        }
+	Move-Item -Path $expandedDir + '\dist\tfvm.exe' -Destination $output_dir + 'tfvm.exe'
+	Remove--Item -Path $expandedDir -Recurse        
     }
 }
