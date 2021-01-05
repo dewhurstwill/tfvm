@@ -16,10 +16,10 @@ Terraform Version Manager
 
 ## Install 📦 & Run 💻
 
-| Steps 📝 | Commands 💻 |
-|-|-|
-| Step 1 | ``` curl -fsSL https://raw.githubusercontent.com/dewhurstwill/tfvm/main/setup.sh | bash ``` |
-| Step 2 | ``` tfvm help ``` |
+```bash
+curl -fsSL https://raw.githubusercontent.com/dewhurstwill/tfvm/main/setup.sh | bash
+tfvm help
+```
 
 
 ## Uninstall 📦
