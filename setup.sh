@@ -7,7 +7,7 @@
 
 # Constants
 version='0.1.0-beta'
-zip_url="https://codeload.github.com/dewhurstwill/tfvm/zip"
+zip_url="https://codeload.github.com/dewhurstwill/tfvm/zip/v${version}"
 zip_download_location="${HOME}/Downloads/tfvm-v${version}.zip"
 bin_download_location="${HOME}/Downloads/tfvm-${version}/dist/tfvm"
 
@@ -16,7 +16,8 @@ echo Downloading
 curl -s --output $zip_download_location $zip_url
 
 # Unpacking
-unzip $zip_download_location -q -d "${HOME}/Downloads"
+echo Unpacking
+unzip -q -d "${HOME}/Downloads" $zip_download_location
 
 # Making binary executable
 chmod +x $bin_download_location
@@ -29,7 +30,7 @@ sudo ln -s ~/.terraform.versions/terraform /usr/local/bin/terraform
 # Cleanup
 echo Cleaning up
 rm $zip_download_location
-rm -r "${HOME}/Downloads/tfvm-v${version}"
+rm -r "${HOME}/Downloads/tfvm-${version}"
 
 # Done
 echo Done
