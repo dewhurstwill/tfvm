@@ -36,8 +36,8 @@ rm -r "${HOME}/Downloads/tfvm-${version}"
 echo "tfvm added"
 echo ""
 
-read -p "Do you want to install tfstack-init as well? (y, n): " tfstack_q
-if [[ tfstack_q == "y" ]];
+read -p "Do you want to install tfstack-init as well? (y, n): " tfStackInitAnswer
+if [[ $tfStackInitAnswer == "y" ]]
 then
   curl -fsSL https://raw.githubusercontent.com/dewhurstwill/tfstack-init/main/install.sh | bash
   echo "tfstack-init added"
