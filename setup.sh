@@ -32,13 +32,9 @@ echo "Cleaning up"
 rm $zip_download_location
 rm -r "${HOME}/Downloads/tfvm-${version}"
 
+
 read -p "Do you want to install tfstack-init as well? yes, no" tfstack_q
 if [ tfstack_q == 'yes' ];
 then
-  curl -s -fsSL https://raw.githubusercontent.com/dewhurstwill/tfstack-init/main/install.sh | bash
-else
-  echo "Skipping"
+  curl -fsSL https://raw.githubusercontent.com/dewhurstwill/tfstack-init/main/install.sh | bash
 fi
-
-# Done
-echo 'Done'
