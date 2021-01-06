@@ -20,7 +20,7 @@ def is_tf_in_path(path_list: list):
 # Helper Module for retreiving and parsing the PATH environment variable
 def handle_path():
   path = environ['PATH']
-  path_delimeter = ':' # Default *nix delimiter
+  path_delimiter = ':' # Default *nix delimiter
 
   # If windows
   if platform.system() == 'Windows': 
