@@ -31,13 +31,13 @@ def purge():
         files.extend(filenames)
         directories.extend(dirnames)
         break
-      
+
       if len(directories) > 0:
         print('Please manually remove all subdirectories under ' + location + ' then try again')
       else:
         for file in files:
           if file != 'terraform':
-            deletefile(terraform_install_location + path_style + file)
+            deletefile(location + path_style + file)
         if 'temp' in location:
           rmdir(location)
 
