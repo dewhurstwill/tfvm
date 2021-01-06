@@ -37,9 +37,9 @@ echo "tfvm added"
 echo ""
 
 read -p "Do you want to install tfstack-init as well? (y, n): " tfStackInitAnswer
-if [[ $tfStackInitAnswer == "y" ]]
+if [[ $tfStackInitAnswer == "y" ]];
 then
-  curl -fsSL https://raw.githubusercontent.com/dewhurstwill/tfstack-init/main/install.sh | bash
+  curl -s -fsSL https://raw.githubusercontent.com/dewhurstwill/tfstack-init/main/install.sh | bash
   echo "tfstack-init added"
 else
   echo "skipping tfstack-init"
