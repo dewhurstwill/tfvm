@@ -1,3 +1,4 @@
 build
 dist
 tfvm.spec
+__pycache__
