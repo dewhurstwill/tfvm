@@ -28,7 +28,7 @@ tfvm help
 curl -fsSL https://raw.githubusercontent.com/dewhurstwill/tfvm/main/uninstall.sh | bash
 ```
 
-## Required python packages:
+## Required python packages
 
 Handled by [build.sh](https://github.com/dewhurstwill/tfvm/blob/main/build.sh)
 
@@ -46,7 +46,7 @@ Handled by [build.sh](https://github.com/dewhurstwill/tfvm/blob/main/build.sh)
 More can be found in [requirements.txt](https://github.com/dewhurstwill/tfvm/blob/main/requirements.txt)
 
 
-## Want to build your own binary:
+## Want to build your own binary
 
 | Step | Action |
 |-|-|
