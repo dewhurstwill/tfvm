@@ -5,7 +5,7 @@
 #################################
 
 # Constants
-$version = "0.1.0-beta"
+$version = "0.1.0"
 $url = 'https://codeload.github.com/dewhurstwill/tfvm/zip/v' + $version
 $output_zip = "C:\$env:HOMEPATH\" + $zip_name
 $output_dir = "C:\$env:HOMEPATH\.tfvm"

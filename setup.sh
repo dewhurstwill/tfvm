@@ -6,7 +6,7 @@
 #################################
 
 # Constants
-version='0.1.0-beta'
+version='0.1.0'
 zip_url="https://codeload.github.com/dewhurstwill/tfvm/zip/v${version}"
 zip_download_location="${HOME}/Downloads/tfvm-v${version}.zip"
 bin_download_location="${HOME}/Downloads/tfvm-${version}/dist/tfvm"
